@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <title>teste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background: #6E675F;
+	overflow: hidden;
+  }
+  
+  .box {
+	 height: 350px;
+	 width: 500px;
+	 transform: translateX(230px);
+	 position: absolute;
+	 top: 70px;
+  }
+  
+  .parte_um {
+    position: absolute;
+    width: 295px;
+    height: 280px;
+	  left:50px;
+    transform: translateY(55px);
+	  box-shadow: rgba(0, 0, 0, 0.56) -5px 22px 70px 4px;
+	  border-radius: 7px 10px 10px 7px;
+  }
+  
+  .bolo {
+    position: absolute;
+    width: 295px;
+    height: 280px;
+    border-radius: 7px 10px 10px 7px;
+	 -webkit-mask-image: linear-gradient(90deg, white,  transparent 125%);
+    mask-image: linear-gradient(90deg, white,  transparent 125%);
+  }
+  
+  .parte_dois {
+    width: 230px;
+    height: 317.8px;
+    position: relative;
+    left: 300px;
+    transform: translateY(19.5px);
+    background: linear-gradient(67deg, #CED4DA 25%, #ADB5BD, #6C757D );
+    box-shadow: rgba(0, 0, 0, 0.56) 10px 22px 70px 4px;
+    border-radius: 10px 3px 3px 10px;
+  }
+  
+  .botao {
+     left: 85px;
+	 top: 257px;
+	 position: absolute;
+	 height: 40px;
+	 border-radius: 5px;
+	 border: 1px solid #ADB5BD;
+	 background: #a3cef1;
+	 font-family: "Playfair Display", serif;
+   font-weight: 100;
+   font-style: italic;
+	 font-size: 15px;
+	 color:#BFD3C1;
+	 -webkit-transition: background-color 2s ease-out;
+   -moz-transition: background-color 2s ease-out;
+   -o-transition: background-color 2s ease-out;
+   transition: background-color 2s ease-out;
+	 box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 8px;
+  }
+  
+#logo {
+     position: absolute;
+	 left: 40px;
+	 top: -13px
+} 
+
+#title {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  margin-bottom: -61.5px;
+  transform: translateY(106px);
+  text-align: center;
+  color: #488e7c;
+}
+
+#text {
+   transform: translateY(182px);
+   text-align: center;
+   font-family: "Edu VIC WA NT Beginner", cursive;
+   font-weight: 490;
+   font-style: italic;
+   font-size: 20px;
+   color: #4F6D7A;
+   text-shadow: 1px 1px 3px #E3F2FD;
+}
+
+.botao:hover, .botao:active {
+   cursor: pointer;
+   background-color: #347665;
+   border: 1px solid #caf0f8;
+   color: white;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="box">
+      <div class="parte_um">
+       <img class="bolo" src="image/bolo_casado.jpeg">
+	  </div>
+      <div class="parte_dois">
+	      <img id="logo" src="image/log0.png" width="63%" height="52%">
+		  <h1 id="title">Royal Pastry</h1>
+          <h3 id="text"><nobr>A Melhor Confeitaria no<wbr>Ramo de Casamentos<nobr></h3>
+		  <input class="botao" name="botao" type="button" value="Conhecer">
+      </div>
+   </div>  
+</body>
+</html>
